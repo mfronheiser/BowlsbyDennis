@@ -5,9 +5,10 @@ function getBigger (){
     logo.style.color = 'blue';
 }
 
-logo.addEventListener('mouseover', getBigger);
+logo.addEventListener('mouseenter', getBigger);
+logo.removeEventListener('mouseleave', getBigger);
 
-
+// open / close cleaning directions
 let open = document.getElementById('open');
 let close = document.getElementById('close');
 let care = document.getElementById('care');
